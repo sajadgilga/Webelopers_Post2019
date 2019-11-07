@@ -30,14 +30,14 @@ export default {
   },
   watch: {
     $route (to, from) {
-      axios.get('http://localhost:8000/notices/posts/' + this.page).then(response => {
+      axios.get('http://webelopers.ce.sharif.ir/notices/posts/' + this.page).then(response => {
         this.loadPosts(response.data)
       }).catch(reason => {
       })
     }
   },
   created () {
-    axios.get('http://localhost:8000/notices/posts/' + this.page).then(response => {
+    axios.get('http://webelopers.ce.sharif.ir/notices/posts/' + this.page).then(response => {
       this.loadPosts(response.data)
     }).catch(reason => {
     })

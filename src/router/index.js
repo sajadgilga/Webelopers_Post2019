@@ -8,13 +8,13 @@ let router = new Router({
   mode: 'history',
   routes: [
     {
-      path: '/:page',
+      path: '/posts/:page',
       name: 'MainPage',
       component: MainPage,
       props: true
     },
     {
-      path: '/post/:title',
+      path: '/posts/post/:title',
       name: 'NoticePost',
       component: NoticePost,
       props: true

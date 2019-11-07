@@ -23,7 +23,7 @@ export default {
     }
   },
   created () {
-    axios.get('http://localhost:8000/notices/post/' + this.title).then(response => {
+    axios.get('http://webelopers.ce.sharif.ir/notices/post/' + this.title).then(response => {
       this.loaded(response.data)
     }).catch(reason => {})
   }
